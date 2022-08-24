@@ -38,7 +38,10 @@ describe('sayHello', function () {
         expect(sayHello(true)).toBe("Hello, World!");
     });
     it('should return "Hello, world!" when passed false', function (){
-        expect(sayHello(false)).toBe("Hello World!");
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "Hello, world!" when passed an empty string', function (){
+        expect(sayHello("")).toBe("Hello, World!");
     });
 });
 // Next, add expect(sayHello(true)).toBe("Hello, World!") to the tests.js file. Refresh to see the failing red test.

@@ -14,7 +14,7 @@ const helloWorld = function () {
 // }
 
 function sayHello(input) {
-     if  (input === undefined || input === true || input === false){
+     if  (input === undefined || input === true || input === false || input === ""){
         return "Hello, World!";
     }else if (input === input){
         return "Hello, " + input + "!";
