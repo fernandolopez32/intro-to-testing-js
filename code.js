@@ -13,6 +13,11 @@ const helloWorld = function () {
 //     }
 // }
 
-function sayHello(input){
-    return "Hello, " + input + "!";
+function sayHello(input) {
+     if  (input === undefined || input === true || input === false){
+        return "Hello, World!";
+    }else if (input === input){
+        return "Hello, " + input + "!";
+    }
 }
+
